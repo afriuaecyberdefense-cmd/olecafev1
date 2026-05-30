@@ -51,14 +51,6 @@ export const DEFAULT_MENU_ITEMS: MenuItem[] = [
   { id: 'sc-3', name: 'Aseeda Cake', description: 'Aseeda cake', price: 33, category: 'snacks-cakes', imageUrl: '/images/snacks-and-cakes/aseeda-cake.jpg' },
   { id: 'sc-4', name: 'Basbosa Cheese Cake', description: 'Basbosa cheese cake', price: 28, category: 'snacks-cakes', imageUrl: '/images/snacks-and-cakes/basbosa-cheese-cake.jpg' },
   { id: 'sc-5', name: 'London Cheese Cake', description: 'London cheese cake', price: 27, category: 'snacks-cakes', imageUrl: '/images/snacks-and-cakes/london-cheese-cake.jpg' },
-  { id: 'sc-6', name: 'San Sabustian Kinder Souce', description: 'San Sabustian kinder sauce', price: 28, category: 'snacks-cakes', imageUrl: '/images/snacks-and-cakes/san-sabustian-kinder-souce.jpg' },
-  { id: 'sc-7', name: 'Banana Pudding', description: 'Banana pudding', price: 29, category: 'snacks-cakes', imageUrl: '/images/snacks-and-cakes/banana-pudding.jpg' },
-  { id: 'sc-8', name: 'Cookies', description: 'Cookies', price: 13, category: 'snacks-cakes', imageUrl: '/images/snacks-and-cakes/cookies.jpg' },
-  { id: 'sc-9', name: 'Cheese Croissant', description: 'Cheese croissant', price: 15, category: 'snacks-cakes', imageUrl: '/images/snacks-and-cakes/cheese-croissant.jpg' },
-  { id: 'sc-10', name: 'Zaatar Croissant', description: 'Zaatar croissant', price: 15, category: 'snacks-cakes', imageUrl: '/images/snacks-and-cakes/zaatar-croissant.jpg' },
-  { id: 'sc-11', name: 'Olain Croissant', description: 'Olain croissant', price: 13, category: 'snacks-cakes', imageUrl: '/images/snacks-and-cakes/olain-croissant.jpg' },
-  { id: 'sc-12', name: 'Halloumi Sour Dough', description: 'Halloumi sour dough', price: 23, category: 'snacks-cakes', imageUrl: '/images/snacks-and-cakes/halloumi-sour-dough.jpg' },
-  { id: 'sc-13', name: 'Chicken Spinach Wrap', description: 'Chicken spinach wrap', price: 26, category: 'snacks-cakes', imageUrl: '/images/snacks-and-cakes/chicken-spinach-wrap.jpg' },
 
   // Mojito (updated)
   { id: 'mj-1', name: 'Passion Fruit Mojito', description: 'Mojito', price: 22, category: 'mojito', imageUrl: '/images/mojito-and-milshake/passiosn-mojito.jpg' },
@@ -90,15 +82,6 @@ export const DEFAULT_MENU_ITEMS: MenuItem[] = [
   { id: 'te-5', name: 'Passion Iced Tea', description: 'Passion iced tea', price: 22, category: 'tea', imageUrl: '/images/tea-and-non-coffee/passion-tea.jpg' },
   { id: 'te-6', name: 'Hibiscus', description: 'Hibiscus tea', price: 22, category: 'tea', imageUrl: '/images/tea-and-non-coffee/hibiscus.jpg' },
 
-  // Extra (kept as-is)
-  { id: 'ex-1', name: 'Oat Milk', description: 'Substitute with oat milk', price: 5, category: 'extra', imageUrl: '/images/iced-coffee/white-mocha.jpg' },
-  { id: 'ex-2', name: 'Almond Milk', description: 'Substitute with almond milk', price: 5, category: 'extra', imageUrl: '/images/iced-coffee/coffee-latte.jpg' },
-  { id: 'ex-3', name: 'Extra Shot', description: 'Additional espresso shot', price: 4, category: 'extra', imageUrl: '/images/hot-drinks/espresso.jpg' },
-  { id: 'ex-4', name: 'Whipped Cream', description: 'Add whipped cream topping', price: 3, category: 'extra', imageUrl: '/images/hot-drinks/hot-chocolate.jpg' },
-  { id: 'ex-5', name: 'Caramel Drizzle', description: 'Add caramel sauce drizzle', price: 3, category: 'extra', imageUrl: '/images/hot-drinks/caramel-mocha.jpg' },
-  { id: 'ex-6', name: 'Chocolate Drizzle', description: 'Add chocolate sauce drizzle', price: 3, category: 'extra', imageUrl: '/images/hot-drinks/hot-chocolate.jpg' },
-  { id: 'ex-7', name: 'Extra Flavor', description: 'Add any syrup flavor', price: 4, category: 'extra', imageUrl: '/images/mojito-and-milshake/oranje.jpg' },
-  { id: 'ex-8', name: 'Honey', description: 'Add organic honey', price: 3, category: 'extra', imageUrl: '/images/mojito-and-milshake/oranje.jpg' },
 ];
 
 export const CATEGORY_CONFIG: { id: Category; label: string }[] = [
@@ -111,12 +94,11 @@ export const CATEGORY_CONFIG: { id: Category; label: string }[] = [
   { id: 'matcha', label: 'Matcha' },
   { id: 'tea', label: 'Tea' },
   { id: 'non-coffee', label: 'Non-Coffee' },
-  { id: 'extra', label: 'Extra' },
 ];
 
 const STORAGE_KEY = 'olecafe_menu_items';
 const STORAGE_VERSION_KEY = 'olecafe_menu_version';
-const MENU_VERSION = '2026-05-30-v5';
+const MENU_VERSION = '2026-05-30-v7';
 
 export function loadMenuItems(): MenuItem[] {
   try {
