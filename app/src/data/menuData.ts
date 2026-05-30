@@ -24,11 +24,7 @@ export const DEFAULT_MENU_ITEMS: MenuItem[] = [
 
 
   // Acai (with images from app/public/imgaes)
-  { id: 'ac-1', name: 'Acai Bowl', description: 'Fresh acai bowl with granola and berries', price: 35, category: 'acai', imageUrl: '/images/acai/acai-bowl.jpg' },
   { id: 'ac-2', name: 'Classic Acai Bowl', description: 'Classic acai bowl with banana, berries, and granola', price: 35, category: 'acai', imageUrl: '/images/acai/acai-bowl.jpg' },
-  { id: 'ac-3', name: 'Smoothie Acai', description: 'Smoothie Acai with banana, berries, and granola blended with milk', price: 30, category: 'acai', imageUrl: '/images/acai/smoothie-acai.jpg' },
-  { id: 'ac-4', name: 'Blueberry Smoothie', description: 'A refreshing purple smoothie made from blended blueberries, milk, yogurt, and ice.', price: 30, category: 'acai', imageUrl: '/images/acai/blue-berry-smoothis.jpg' },
-  { id: 'ac-5', name: 'strawberry Smoothie', description: 'A refreshing red smoothie made from blended strawberries, milk, yogurt, and ice.', price: 30, category: 'acai', imageUrl: '/images/acai/strawberry-smoothis.jpg' },
 
 
 
@@ -98,7 +94,7 @@ export const CATEGORY_CONFIG: { id: Category; label: string }[] = [
 
 const STORAGE_KEY = 'olecafe_menu_items';
 const STORAGE_VERSION_KEY = 'olecafe_menu_version';
-const MENU_VERSION = '2026-05-30-v7';
+const MENU_VERSION = '2026-05-30-v8';
 
 export function loadMenuItems(): MenuItem[] {
   try {
